@@ -189,7 +189,7 @@ body {
   font-size: 14px;
   line-height: 2;
   color: #555;
-  background: #e0fccf;
+  background: #838b83;
 }
 @media (max-width: 767px) {
   body {
@@ -1563,7 +1563,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #a7ff70;
+  background: #a88890;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2321,7 +2321,7 @@ hr {
   margin-top: 80px;
 }
 .header {
-  background: #d1fab8;
+  background: #838b8b;
 }
 .header-inner {
   padding: 25px 0 20px;
@@ -2601,7 +2601,7 @@ hr {
 .footer {
   margin-top: 80px;
   padding: 10px 0;
-  background: #d1fab8;
+  background: #838b8b;
   color: #666;
 }
 .footer-inner {
