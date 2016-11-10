@@ -5,7 +5,7 @@ html {
   -webkit-text-size-adjust: 100%; /* 2 */
 }
 body {
-  margin: #424242;
+  margin: 0;
 }
 article,
 aside,
@@ -189,7 +189,7 @@ body {
   font-size: 14px;
   line-height: 2;
   color: #555;
-  background: #fff;
+  background: ##838B83;
 }
 @media (max-width: 767px) {
   body {
