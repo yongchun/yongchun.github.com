@@ -6,33 +6,13 @@ tags: java se
 
 ### Objects简介
 Objects是java7开始提供的一个工具类。
-该工具类可以方便的处理equals和hasCode方法中的null值；正确且简单的compare方法，从而防止数值类型的比较出现因为益处得到错误的结果;对象的字符串化出现NPE..
+#### 该工具类可以方便的处理equals和hasCode方法中的null值；
+#### 正确且简单的compare方法，从而防止数值类型的比较出现因为益处得到错误的结果;
+#### 对象的字符串化出现NPE..
 
 ### Objects源码
-/*
- * Copyright (c) 2009, 2013, Oracle and/or its affiliates. All rights reserved.
- * ORACLE PROPRIETARY/CONFIDENTIAL. Use is subject to license terms.
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- *
- */
+
+```java 
 
 package java.util;
 
@@ -47,6 +27,7 @@ import java.util.function.Supplier;
  * @since 1.7
  */
 public final class Objects {
+    // 私有构造方法，抛异常是个很好的实现，可以防止被反序列化
     private Objects() {
         throw new AssertionError("No java.util.Objects instances for you!");
     }
@@ -302,4 +283,4 @@ public final class Objects {
         return obj;
     }
 }
-
+```
