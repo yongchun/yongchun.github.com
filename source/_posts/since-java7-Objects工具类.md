@@ -2,13 +2,14 @@
 title: since java7 Objects工具类
 date: 2016-11-15 22:50:42
 tags: java se
+categories: 工具积累
 ---
 
 ### Objects简介
 Objects是java7开始提供的一个工具类。
-#### 该工具类可以方便的处理equals和hasCode方法中的null值；
-#### 正确且简单的compare方法，从而防止数值类型的比较出现因为益处得到错误的结果;
-#### 对象的字符串化出现NPE..
+该工具类可以方便的处理equals和hasCode方法中的null值；
+正确且简单的compare方法，从而防止数值类型的比较出现因为益处得到错误的结果;
+对象的字符串化出现NPE..
 
 ### Objects源码
 
