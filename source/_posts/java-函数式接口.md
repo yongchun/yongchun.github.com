@@ -16,7 +16,6 @@ Arrays.sort(words, String::compareToIgnoreCase);
 上面这段对一个字符串数组进行排序的代码，看起来像是函数式编程语言里的把函数作为参数传递一样，那么java是如何做到这一步的呢？
 其实在java里，会将这一段lamada表达式转换为java里的一个接口对应的实现类，而这个接口就是函数式接口。如：java.lang.Comparable接口。
 
-
 ### java函数式接口长什么样子
 ```java
 package java.util.function;
@@ -66,7 +65,7 @@ public interface Consumer<T> {
 这是java8提供的一个函数式接口Consumer<T> 用来处理一个T类型的值,那么究竟什么才是一个函数式接口呢？
 从概念上来讲，所有只含有一个抽象方法的接口都是函数式接口，所以java8之前的java.lang.Comparable接口也是一个函数式接口。可以在任意函数式接口上标注@FunctionalInterface注解，这样做有两个好处。首先，编译器会检查标注该注解的实体，检查它是否是只包含一个抽象方法的接口。另外，在javadoc页面也会包含一条声明，说明这个接口是一个函数式接口。该注解并不要求强制使用。
 
-3.lamada表达式和函数式接口的关系
+### lamada表达式和函数式接口的关系
 在java中任何一个lamada表达式都可以被转化为一个函数式接口，事实上，函数式接口的转换是你在java中使用lambda表达式能做的唯一一件事。所以一段lamada表达式可以赋值给一个函数式接口的变量。如：
 ```java
 BiFunction<String,String,Integer> comp = (first,second) -> Integer.compare(first.length(),second.length());
