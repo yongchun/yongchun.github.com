@@ -36,3 +36,5 @@ $ hexo deploy
 ```
 
 More info: [Deployment](https://hexo.io/docs/deployment.html)
+
+Markdown语法: [markdown语法](https://laravel-china.org/topics/621)

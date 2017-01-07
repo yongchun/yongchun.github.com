@@ -41,8 +41,6 @@ lamada的语法比较简单，但是其有很多简写的变种，刚开始接�
 ```java
  Stream.of(words).forEach(p -> System.out.println(p));
 ```
-
-
 ### 备注
 lamada表达式其实还有很多其他的变种，使用时候需要多积累，如：
 ```java
