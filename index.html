@@ -277,7 +277,7 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2017-01-07T16:25:29+08:00" content="2017-01-07">
+            <time itemprop="dateCreated" datetime="2017-01-07T17:03:46+08:00" content="2017-01-07">
               2017-01-07
             </time>
           </span>
@@ -323,6 +323,7 @@
 <p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
 <h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
+<p>Markdown语法: <a href="https://laravel-china.org/topics/621" target="_blank" rel="external">markdown语法</a></p>
 
           
         
@@ -431,12 +432,7 @@
 <h6 id="如果只有一个参数，且参数类型可以推导出来，小括号也可以省略："><a href="#如果只有一个参数，且参数类型可以推导出来，小括号也可以省略：" class="headerlink" title="如果只有一个参数，且参数类型可以推导出来，小括号也可以省略："></a>如果只有一个参数，且参数类型可以推导出来，小括号也可以省略：</h6><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">List&lt;String&gt; stringList = Lists.newArrayList(<span class="string">"test"</span>,<span class="string">"spring"</span>);</div><div class="line"></div><div class="line">String[] words = stringList.toArray(<span class="keyword">new</span> String[<span class="number">0</span>]);</div><div class="line"></div><div class="line">Stream.of(words).forEach(p -&gt; &#123; System.out.println(p) &#125;);</div></pre></td></tr></table></figure>
 <h6 id="参数也可以添加注解或者被final修饰"><a href="#参数也可以添加注解或者被final修饰" class="headerlink" title="参数也可以添加注解或者被final修饰"></a>参数也可以添加注解或者被final修饰</h6><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">(<span class="meta">@NotNull</span> <span class="keyword">final</span> String x, String y) -&gt; x.compareToIgnoreCase(y)</div></pre></td></tr></table></figure>
 <h5 id="这边"><a href="#这边" class="headerlink" title="{}这边"></a>{}这边</h5><h6 id="如果-里的逻辑可以使用一个-号表示，大括号也可以省略。"><a href="#如果-里的逻辑可以使用一个-号表示，大括号也可以省略。" class="headerlink" title="如果{}里的逻辑可以使用一个;号表示，大括号也可以省略。"></a>如果{}里的逻辑可以使用一个;号表示，大括号也可以省略。</h6><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">Stream.of(words).forEach(p -&gt; System.out.println(p));</div></pre></td></tr></table></figure>
-<blockquote>
-<ul>
-<li><h3 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h3>lamada表达式其实还有很多其他的变种，使用时候需要多积累，如：<figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">List&lt;String&gt; stringList = Lists.newArrayList(<span class="string">"test"</span>,<span class="string">"spring"</span>);</div><div class="line"></div><div class="line">String[] words = stringList.toArray(<span class="keyword">new</span> String[<span class="number">0</span>]);</div><div class="line"></div><div class="line">Stream.of(words).forEach(System.out::println);</div></pre></td></tr></table></figure>
-</li>
-</ul>
-</blockquote>
+<h3 id="备注"><a href="#备注" class="headerlink" title="备注"></a>备注</h3><p>lamada表达式其实还有很多其他的变种，使用时候需要多积累，如：<br><figure class="highlight java"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div></pre></td><td class="code"><pre><div class="line">List&lt;String&gt; stringList = Lists.newArrayList(<span class="string">"test"</span>,<span class="string">"spring"</span>);</div><div class="line"></div><div class="line">String[] words = stringList.toArray(<span class="keyword">new</span> String[<span class="number">0</span>]);</div><div class="line"></div><div class="line">Stream.of(words).forEach(System.out::println);</div></pre></td></tr></table></figure></p>
 
           
         
